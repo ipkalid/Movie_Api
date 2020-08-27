@@ -66,4 +66,4 @@ https://capstone-project-ipklaid.herokuapp.com
 Auth0 Link: https://dev-ap4b1iwy.us.auth0.com/authorize?audience=capstone&response_type=token&client_id=36yhDVCKItBN06jQ2yJWXzejcd6rtHFq&redirect_uri=http://localhost:8100/tabs/user-page
 
 admin rule can do post, delete and patch 
-admin account
+edtor rule can only patch 
