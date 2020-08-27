@@ -1,0 +1,554 @@
+{
+	"info": {
+		"_postman_id": "ae210910-ffe0-487a-9adc-ff60b6e29abd",
+		"name": "Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "movies",
+			"item": [
+				{
+					"name": "GET movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklteDcwZWswekZZdENEUEpTbVZxRyJ9.eyJpc3MiOiJodHRwczovL2Rldi1hcDRiMWl3eS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY0NTkyZDcxNDYxNjEwMDZkMjUwN2Q1IiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1OTg0NjgxODIsImV4cCI6MTU5ODU0MDE4MSwiYXpwIjoiMzZ5aERWQ0tJdEJOMDZqUTJ5SldYemVqY2Q2cnRIRnEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6ZGlyZWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOmRpcmVjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDpkaXJlY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.HLXa9Gwu71tAlykh83h823Zx8fL4540uwFCjkmlOInbhVV5EQLhQp1JZ8SQbkPbcbqHDid81UR02VEOkruNiZJkQ-I-ON6axnX6E3-XYv31_W14qSfoyqZGUI8BDrVELBsS8-f6XUBn5GLv3RY9Tj2QlUUC2hMvxO9vJ1ud7kCvPslnMWiIbpaXUa3i6M-DjDt1F5WVJH2DYLRu7NEWuvZHkqoR8xCZeU6Voh12OxOMzW7xP1EGPV_q_aJlUuidumhx84DHf7VDyTvMDFRJzSQBF4fOviWvHvMn7FyPDEccV_dBsfezWZq-qBrDQDrlO63mj345NbhpVouBMGdmM0Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET movie detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklteDcwZWswekZZdENEUEpTbVZxRyJ9.eyJpc3MiOiJodHRwczovL2Rldi1hcDRiMWl3eS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY0NTkyZDcxNDYxNjEwMDZkMjUwN2Q1IiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1OTg0NjgxODIsImV4cCI6MTU5ODU0MDE4MSwiYXpwIjoiMzZ5aERWQ0tJdEJOMDZqUTJ5SldYemVqY2Q2cnRIRnEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6ZGlyZWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOmRpcmVjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDpkaXJlY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.HLXa9Gwu71tAlykh83h823Zx8fL4540uwFCjkmlOInbhVV5EQLhQp1JZ8SQbkPbcbqHDid81UR02VEOkruNiZJkQ-I-ON6axnX6E3-XYv31_W14qSfoyqZGUI8BDrVELBsS8-f6XUBn5GLv3RY9Tj2QlUUC2hMvxO9vJ1ud7kCvPslnMWiIbpaXUa3i6M-DjDt1F5WVJH2DYLRu7NEWuvZHkqoR8xCZeU6Voh12OxOMzW7xP1EGPV_q_aJlUuidumhx84DHf7VDyTvMDFRJzSQBF4fOviWvHvMn7FyPDEccV_dBsfezWZq-qBrDQDrlO63mj345NbhpVouBMGdmM0Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/movies/2",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklteDcwZWswekZZdENEUEpTbVZxRyJ9.eyJpc3MiOiJodHRwczovL2Rldi1hcDRiMWl3eS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY0NTkyZDcxNDYxNjEwMDZkMjUwN2Q1IiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1OTg0NjgxODIsImV4cCI6MTU5ODU0MDE4MSwiYXpwIjoiMzZ5aERWQ0tJdEJOMDZqUTJ5SldYemVqY2Q2cnRIRnEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6ZGlyZWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOmRpcmVjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDpkaXJlY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.HLXa9Gwu71tAlykh83h823Zx8fL4540uwFCjkmlOInbhVV5EQLhQp1JZ8SQbkPbcbqHDid81UR02VEOkruNiZJkQ-I-ON6axnX6E3-XYv31_W14qSfoyqZGUI8BDrVELBsS8-f6XUBn5GLv3RY9Tj2QlUUC2hMvxO9vJ1ud7kCvPslnMWiIbpaXUa3i6M-DjDt1F5WVJH2DYLRu7NEWuvZHkqoR8xCZeU6Voh12OxOMzW7xP1EGPV_q_aJlUuidumhx84DHf7VDyTvMDFRJzSQBF4fOviWvHvMn7FyPDEccV_dBsfezWZq-qBrDQDrlO63mj345NbhpVouBMGdmM0Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"The Lord of the Rings\",\r\n    \"director_id\":2,\r\n    \"relese_date\":\"2003/8/12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklteDcwZWswekZZdENEUEpTbVZxRyJ9.eyJpc3MiOiJodHRwczovL2Rldi1hcDRiMWl3eS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY0NTkxZTdlOWVmNWYwMDY3YjU2MGNlIiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1OTg0NjkzMzUsImV4cCI6MTU5ODU0MTMzNCwiYXpwIjoiMzZ5aERWQ0tJdEJOMDZqUTJ5SldYemVqY2Q2cnRIRnEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbInBhdGNoOmFjdG9ycyIsInBhdGNoOmRpcmVjdG9ycyIsInBhdGNoOm1vdmllcyJdfQ.wPztATtDJHfVvNHfSEfxNyGZUhJurG0AGxgeB49VGBTRHRRImVvyfPJDKNWm3NdnKSpdfBIy9UYg4cqNxjgqz5UapA68jD0LHHuBSFrR-2UTN-AZXCJ6H3spfrL3DDv_UG-k9wpmS8MiYMrDwHzCPfI8O6YcOTIzo_qCY3jUPcCyB792U626tQI1HKT9QUQy0yo8DFfxRE5LYXIhI9M1gR-agukUZ98v8vC3OO5N4N2QsxgmP4pIc04FgJVhE8cRpI678GeTsvD9Z-6YwYrMsPSJFnp_9E7srHHeyb5N3LJsxGkvhbI0rShfLQmY-cFG8qpdfB6gKl49li8q4sCY3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n\r\n    \"relese_date\":\"2014/8/12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/movies/1",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklteDcwZWswekZZdENEUEpTbVZxRyJ9.eyJpc3MiOiJodHRwczovL2Rldi1hcDRiMWl3eS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY0NTkyZDcxNDYxNjEwMDZkMjUwN2Q1IiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1OTg0NjgxODIsImV4cCI6MTU5ODU0MDE4MSwiYXpwIjoiMzZ5aERWQ0tJdEJOMDZqUTJ5SldYemVqY2Q2cnRIRnEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6ZGlyZWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOmRpcmVjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDpkaXJlY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.HLXa9Gwu71tAlykh83h823Zx8fL4540uwFCjkmlOInbhVV5EQLhQp1JZ8SQbkPbcbqHDid81UR02VEOkruNiZJkQ-I-ON6axnX6E3-XYv31_W14qSfoyqZGUI8BDrVELBsS8-f6XUBn5GLv3RY9Tj2QlUUC2hMvxO9vJ1ud7kCvPslnMWiIbpaXUa3i6M-DjDt1F5WVJH2DYLRu7NEWuvZHkqoR8xCZeU6Voh12OxOMzW7xP1EGPV_q_aJlUuidumhx84DHf7VDyTvMDFRJzSQBF4fOviWvHvMn7FyPDEccV_dBsfezWZq-qBrDQDrlO63mj345NbhpVouBMGdmM0Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/movies/15",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"15"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Actors",
+			"item": [
+				{
+					"name": "GET actors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklteDcwZWswekZZdENEUEpTbVZxRyJ9.eyJpc3MiOiJodHRwczovL2Rldi1hcDRiMWl3eS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY0NTkyZDcxNDYxNjEwMDZkMjUwN2Q1IiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1OTg0NjgxODIsImV4cCI6MTU5ODU0MDE4MSwiYXpwIjoiMzZ5aERWQ0tJdEJOMDZqUTJ5SldYemVqY2Q2cnRIRnEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6ZGlyZWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOmRpcmVjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDpkaXJlY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.HLXa9Gwu71tAlykh83h823Zx8fL4540uwFCjkmlOInbhVV5EQLhQp1JZ8SQbkPbcbqHDid81UR02VEOkruNiZJkQ-I-ON6axnX6E3-XYv31_W14qSfoyqZGUI8BDrVELBsS8-f6XUBn5GLv3RY9Tj2QlUUC2hMvxO9vJ1ud7kCvPslnMWiIbpaXUa3i6M-DjDt1F5WVJH2DYLRu7NEWuvZHkqoR8xCZeU6Voh12OxOMzW7xP1EGPV_q_aJlUuidumhx84DHf7VDyTvMDFRJzSQBF4fOviWvHvMn7FyPDEccV_dBsfezWZq-qBrDQDrlO63mj345NbhpVouBMGdmM0Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET actors detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklteDcwZWswekZZdENEUEpTbVZxRyJ9.eyJpc3MiOiJodHRwczovL2Rldi1hcDRiMWl3eS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY0NTkyZDcxNDYxNjEwMDZkMjUwN2Q1IiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1OTg0NjgxODIsImV4cCI6MTU5ODU0MDE4MSwiYXpwIjoiMzZ5aERWQ0tJdEJOMDZqUTJ5SldYemVqY2Q2cnRIRnEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6ZGlyZWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOmRpcmVjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDpkaXJlY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.HLXa9Gwu71tAlykh83h823Zx8fL4540uwFCjkmlOInbhVV5EQLhQp1JZ8SQbkPbcbqHDid81UR02VEOkruNiZJkQ-I-ON6axnX6E3-XYv31_W14qSfoyqZGUI8BDrVELBsS8-f6XUBn5GLv3RY9Tj2QlUUC2hMvxO9vJ1ud7kCvPslnMWiIbpaXUa3i6M-DjDt1F5WVJH2DYLRu7NEWuvZHkqoR8xCZeU6Voh12OxOMzW7xP1EGPV_q_aJlUuidumhx84DHf7VDyTvMDFRJzSQBF4fOviWvHvMn7FyPDEccV_dBsfezWZq-qBrDQDrlO63mj345NbhpVouBMGdmM0Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/actors/3",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST actors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklteDcwZWswekZZdENEUEpTbVZxRyJ9.eyJpc3MiOiJodHRwczovL2Rldi1hcDRiMWl3eS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY0NTkyZDcxNDYxNjEwMDZkMjUwN2Q1IiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1OTg0NjgxODIsImV4cCI6MTU5ODU0MDE4MSwiYXpwIjoiMzZ5aERWQ0tJdEJOMDZqUTJ5SldYemVqY2Q2cnRIRnEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6ZGlyZWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOmRpcmVjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDpkaXJlY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.HLXa9Gwu71tAlykh83h823Zx8fL4540uwFCjkmlOInbhVV5EQLhQp1JZ8SQbkPbcbqHDid81UR02VEOkruNiZJkQ-I-ON6axnX6E3-XYv31_W14qSfoyqZGUI8BDrVELBsS8-f6XUBn5GLv3RY9Tj2QlUUC2hMvxO9vJ1ud7kCvPslnMWiIbpaXUa3i6M-DjDt1F5WVJH2DYLRu7NEWuvZHkqoR8xCZeU6Voh12OxOMzW7xP1EGPV_q_aJlUuidumhx84DHf7VDyTvMDFRJzSQBF4fOviWvHvMn7FyPDEccV_dBsfezWZq-qBrDQDrlO63mj345NbhpVouBMGdmM0Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Matthew McConaughey\",\r\n    \"gender\": \"Male\",\r\n    \"birth_date\": \"1969/12/3\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH actors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklteDcwZWswekZZdENEUEpTbVZxRyJ9.eyJpc3MiOiJodHRwczovL2Rldi1hcDRiMWl3eS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY0NTkxZTdlOWVmNWYwMDY3YjU2MGNlIiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1OTg0NjkzMzUsImV4cCI6MTU5ODU0MTMzNCwiYXpwIjoiMzZ5aERWQ0tJdEJOMDZqUTJ5SldYemVqY2Q2cnRIRnEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbInBhdGNoOmFjdG9ycyIsInBhdGNoOmRpcmVjdG9ycyIsInBhdGNoOm1vdmllcyJdfQ.wPztATtDJHfVvNHfSEfxNyGZUhJurG0AGxgeB49VGBTRHRRImVvyfPJDKNWm3NdnKSpdfBIy9UYg4cqNxjgqz5UapA68jD0LHHuBSFrR-2UTN-AZXCJ6H3spfrL3DDv_UG-k9wpmS8MiYMrDwHzCPfI8O6YcOTIzo_qCY3jUPcCyB792U626tQI1HKT9QUQy0yo8DFfxRE5LYXIhI9M1gR-agukUZ98v8vC3OO5N4N2QsxgmP4pIc04FgJVhE8cRpI678GeTsvD9Z-6YwYrMsPSJFnp_9E7srHHeyb5N3LJsxGkvhbI0rShfLQmY-cFG8qpdfB6gKl49li8q4sCY3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"exampleddd\",\r\n    \"gender\": \"Female\",\r\n    \"birth_date\": \"1997/12/3\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/actors/1",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE actors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklteDcwZWswekZZdENEUEpTbVZxRyJ9.eyJpc3MiOiJodHRwczovL2Rldi1hcDRiMWl3eS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY0NTkyZDcxNDYxNjEwMDZkMjUwN2Q1IiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1OTg0NjgxODIsImV4cCI6MTU5ODU0MDE4MSwiYXpwIjoiMzZ5aERWQ0tJdEJOMDZqUTJ5SldYemVqY2Q2cnRIRnEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6ZGlyZWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOmRpcmVjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDpkaXJlY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.HLXa9Gwu71tAlykh83h823Zx8fL4540uwFCjkmlOInbhVV5EQLhQp1JZ8SQbkPbcbqHDid81UR02VEOkruNiZJkQ-I-ON6axnX6E3-XYv31_W14qSfoyqZGUI8BDrVELBsS8-f6XUBn5GLv3RY9Tj2QlUUC2hMvxO9vJ1ud7kCvPslnMWiIbpaXUa3i6M-DjDt1F5WVJH2DYLRu7NEWuvZHkqoR8xCZeU6Voh12OxOMzW7xP1EGPV_q_aJlUuidumhx84DHf7VDyTvMDFRJzSQBF4fOviWvHvMn7FyPDEccV_dBsfezWZq-qBrDQDrlO63mj345NbhpVouBMGdmM0Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/actors/21",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"21"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Director",
+			"item": [
+				{
+					"name": "GET directors",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"example\",\r\n    \"gender\": \"Female\",\r\n    \"birth_date\": \"1997/12/3\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/directors",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"directors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET directors  detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"example\",\r\n    \"gender\": \"Female\",\r\n    \"birth_date\": \"1997/12/3\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/directors/3",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"directors",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST directors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklteDcwZWswekZZdENEUEpTbVZxRyJ9.eyJpc3MiOiJodHRwczovL2Rldi1hcDRiMWl3eS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY0NTkyZDcxNDYxNjEwMDZkMjUwN2Q1IiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1OTg0NjgxODIsImV4cCI6MTU5ODU0MDE4MSwiYXpwIjoiMzZ5aERWQ0tJdEJOMDZqUTJ5SldYemVqY2Q2cnRIRnEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6ZGlyZWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOmRpcmVjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDpkaXJlY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.HLXa9Gwu71tAlykh83h823Zx8fL4540uwFCjkmlOInbhVV5EQLhQp1JZ8SQbkPbcbqHDid81UR02VEOkruNiZJkQ-I-ON6axnX6E3-XYv31_W14qSfoyqZGUI8BDrVELBsS8-f6XUBn5GLv3RY9Tj2QlUUC2hMvxO9vJ1ud7kCvPslnMWiIbpaXUa3i6M-DjDt1F5WVJH2DYLRu7NEWuvZHkqoR8xCZeU6Voh12OxOMzW7xP1EGPV_q_aJlUuidumhx84DHf7VDyTvMDFRJzSQBF4fOviWvHvMn7FyPDEccV_dBsfezWZq-qBrDQDrlO63mj345NbhpVouBMGdmM0Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Peter Jackson\",\r\n    \"gender\": \"Male\",\r\n    \"birth_date\": \"1961/12/3\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/directors",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"directors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH directors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklteDcwZWswekZZdENEUEpTbVZxRyJ9.eyJpc3MiOiJodHRwczovL2Rldi1hcDRiMWl3eS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY0NTkxZTdlOWVmNWYwMDY3YjU2MGNlIiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1OTg0NjkzMzUsImV4cCI6MTU5ODU0MTMzNCwiYXpwIjoiMzZ5aERWQ0tJdEJOMDZqUTJ5SldYemVqY2Q2cnRIRnEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbInBhdGNoOmFjdG9ycyIsInBhdGNoOmRpcmVjdG9ycyIsInBhdGNoOm1vdmllcyJdfQ.wPztATtDJHfVvNHfSEfxNyGZUhJurG0AGxgeB49VGBTRHRRImVvyfPJDKNWm3NdnKSpdfBIy9UYg4cqNxjgqz5UapA68jD0LHHuBSFrR-2UTN-AZXCJ6H3spfrL3DDv_UG-k9wpmS8MiYMrDwHzCPfI8O6YcOTIzo_qCY3jUPcCyB792U626tQI1HKT9QUQy0yo8DFfxRE5LYXIhI9M1gR-agukUZ98v8vC3OO5N4N2QsxgmP4pIc04FgJVhE8cRpI678GeTsvD9Z-6YwYrMsPSJFnp_9E7srHHeyb5N3LJsxGkvhbI0rShfLQmY-cFG8qpdfB6gKl49li8q4sCY3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"example\",\r\n    \"gender\": \"Female\",\r\n    \"birth_date\": \"1997/12/3\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/directors/4",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"directors",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE directors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklteDcwZWswekZZdENEUEpTbVZxRyJ9.eyJpc3MiOiJodHRwczovL2Rldi1hcDRiMWl3eS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY0NTkyZDcxNDYxNjEwMDZkMjUwN2Q1IiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1OTg0NjgxODIsImV4cCI6MTU5ODU0MDE4MSwiYXpwIjoiMzZ5aERWQ0tJdEJOMDZqUTJ5SldYemVqY2Q2cnRIRnEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6ZGlyZWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOmRpcmVjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDpkaXJlY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.HLXa9Gwu71tAlykh83h823Zx8fL4540uwFCjkmlOInbhVV5EQLhQp1JZ8SQbkPbcbqHDid81UR02VEOkruNiZJkQ-I-ON6axnX6E3-XYv31_W14qSfoyqZGUI8BDrVELBsS8-f6XUBn5GLv3RY9Tj2QlUUC2hMvxO9vJ1ud7kCvPslnMWiIbpaXUa3i6M-DjDt1F5WVJH2DYLRu7NEWuvZHkqoR8xCZeU6Voh12OxOMzW7xP1EGPV_q_aJlUuidumhx84DHf7VDyTvMDFRJzSQBF4fOviWvHvMn7FyPDEccV_dBsfezWZq-qBrDQDrlO63mj345NbhpVouBMGdmM0Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"example\",\r\n    \"gender\": \"Female\",\r\n    \"birth_date\": \"1997/12/3\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone-project-ipklaid.herokuapp.com/directors/15",
+							"protocol": "https",
+							"host": [
+								"capstone-project-ipklaid",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"directors",
+								"15"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -15,6 +15,7 @@ def create_app(test_config=None):
     CORS(app)
     setup_db(app)
 
+    
     # db.create_all()
     # db_drop_and_create_all()
     # Director.insertData()
@@ -84,7 +85,7 @@ def create_app(test_config=None):
         birth_date = body.get('birth_date', None)
         gender = body.get('gender', None)
 
-        if ((name is None) or (gender is None) or (birth_date is None)):
+        if ((name is None) and (gender is None) and (birth_date is None)):
             abort(400)
 
         try:
@@ -118,7 +119,7 @@ def create_app(test_config=None):
             return jsonify({
                 "success": True,
                 "delete": id
-            }), 200
+            }), 201
 
         except Exception as e:
             abort(401)
@@ -219,7 +220,7 @@ def create_app(test_config=None):
         relese_date = body.get('relese_date', None)
         director_id = body.get('director_id', None)
 
-        if ((name is None) or (director_id is None) or (relese_date is None)):
+        if ((name is None) and (director_id is None) and (relese_date is None)):
             abort(400)
 
         try:
@@ -254,7 +255,7 @@ def create_app(test_config=None):
             return jsonify({
                 "success": True,
                 "delete": id
-            }), 200
+            }), 201
 
         except Exception as e:
             abort(401)
@@ -354,7 +355,7 @@ def create_app(test_config=None):
         birth_date = body.get('birth_date', None)
         gender = body.get('gender', None)
 
-        if ((name is None) or (gender is None) or (birth_date is None)):
+        if ((name is None) and (gender is None) and (birth_date is None)):
             abort(400)
 
         try:

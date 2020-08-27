@@ -144,7 +144,7 @@ class Movie(db.Model):
         for x in range(10):
             movie = Movie(name='name_{}'.format(x),
                           relese_date='2020/12/{}'.format(x + 1),
-                          director_id=x + 1)
+                          director_id= 1 )
             db.session.add(movie)
             db.session.commit()
 
