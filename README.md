@@ -5,7 +5,7 @@ The Casting Agency models a company that is responsible for creating movies and 
 # Models:
 
 ## Movies
-with attributes title and release date
+with attributes title, director and release date
 ## Actors 
 attributes name, age and gender
 ## Director 
