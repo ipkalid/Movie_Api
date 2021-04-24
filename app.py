@@ -31,6 +31,17 @@ def create_app(test_config=None):
     def get_healthy():
         return 'healthy'
 
+    @app.route('/data')
+    @requires_auth('post:actors')
+    def get_data():
+        try:
+            return jsonify({
+                "success": True,
+                "actors": "user data granted"
+            }), 200
+        except Exception as e:
+            abort(400)
+
     @app.route('/actors')
     def get_actors():
         try:
