@@ -29,7 +29,7 @@ def create_app(test_config=None):
 
     @app.route('/')
     def get_healthy():
-        return 'healthy'
+        return 'healthy v2'
 
     @app.route('/data')
     @requires_auth('post:actors')
