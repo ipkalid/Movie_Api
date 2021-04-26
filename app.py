@@ -29,7 +29,7 @@ def create_app(test_config=None):
 
     @app.route('/')
     def get_healthy():
-        return 'healthy v3'
+        return 'healthy v4'
 
     @app.route('/data')
     @requires_auth('post:actors')
@@ -37,11 +37,16 @@ def create_app(test_config=None):
         try:
             return jsonify({
                 "success": True,
-                "actors": "user data granted",
+                "message": "user data granted",
                 "token": token
             }), 200
         except Exception as e:
-            abort(400)
+             return jsonify({
+                "falure": true,
+                "message": "{}".format(e),
+               
+            }), 400
+           # abort(400)
 
     @app.route('/actors')
     def get_actors():
