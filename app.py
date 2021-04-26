@@ -33,11 +33,12 @@ def create_app(test_config=None):
 
     @app.route('/data')
     @requires_auth('post:actors')
-    def get_data():
+    def get_data(token):
         try:
             return jsonify({
                 "success": True,
-                "actors": "user data granted"
+                "actors": "user data granted",
+                "token": token
             }), 200
         except Exception as e:
             abort(400)
